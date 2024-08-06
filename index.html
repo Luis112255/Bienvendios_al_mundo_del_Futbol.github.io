@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado del sitio -->
+    <header>
+        <h1>Bienvenidos al Mundo del Fútbol</h1>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#jugadores">Jugadores</a></li>
+                <li><a href="#torneos">Torneos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Historia -->
+        <section id="historia">
+            <h2>Historia del Fútbol</h2>
+            <p>El fútbol, también conocido como soccer en algunos países, tiene una historia que se remonta a varios siglos atrás.</p>
+            <!-- Formulario para añadir información sobre historia -->
+            <form action="/submit_historia" method="post">
+                <label for="infoHistoria">Añadir información sobre historia:</label>
+                <textarea id="infoHistoria" name="infoHistoria" rows="4" cols="50"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Sección Jugadores -->
+        <section id="jugadores">
+            <h2>Jugadores Famosos</h2>
+            <p>El fútbol ha visto a muchos jugadores talentosos a lo largo de los años, como Pelé, Diego Maradona y Lionel Messi.</p>
+            <!-- Formulario para añadir jugadores famosos -->
+            <form action="/submit_jugadores" method="post">
+                <label for="nombreJugador">Nombre del Jugador:</label>
+                <input type="text" id="nombreJugador" name="nombreJugador" required>
+                <label for="descripcionJugador">Descripción:</label>
+                <textarea id="descripcionJugador" name="descripcionJugador" rows="4" cols="50"></textarea>
+                <button type="submit">Añadir Jugador</button>
+            </form>
+        </section>
+
+        <!-- Sección Torneos -->
+        <section id="torneos">
+            <h2>Torneos Importantes</h2>
+            <p>Algunos de los torneos más importantes de fútbol incluyen la Copa Mundial de la FIFA, la UEFA Champions League y la Copa América.</p>
+            <!-- Formulario para añadir información sobre torneos -->
+            <form action="/submit_torneos" method="post">
+                <label for="nombreTorneo">Nombre del Torneo:</label>
+                <input type="text" id="nombreTorneo" name="nombreTorneo" required>
+                <label for="descripcionTorneo">Descripción:</label>
+                <textarea id="descripcionTorneo" name="descripcionTorneo" rows="4" cols="50"></textarea>
+                <button type="submit">Añadir Torneo</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mundo del Fútbol</p>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
